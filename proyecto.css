@@ -1,0 +1,325 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+#nav{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+
+#navdentro{
+    display: flex;
+    gap: 40px;
+    margin-left: 150px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 10px black, 0 0 20px black;
+}
+
+.link:hover{
+    color: gray;
+}
+
+
+#menu {
+    position: absolute;
+    right: 200px;
+    top: 20px;
+    z-index: 10;
+}
+
+.icono {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.bajarmenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: black;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.bajarmenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.bajarmenu li a:hover {
+    background: #333;
+}
+
+#menu:hover .bajarmenu {
+    display: block;
+}
+
+/* 
+   ESTILO DE ESCRITORIO
+                          */
+
+@media (min-width: 601px){
+
+    #intro2{
+        position: relative;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end;  
+        justify-content: flex-start;
+
+        margin-top: 200px;
+        margin-left: 800px;
+
+        background-color: black;
+        width: 1000px;
+        height: 765px;
+        color: white;
+        border-radius: 2%;
+        padding: 20px;
+        text-align: right; 
+    }
+
+    #intro2 h1{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: aliceblue;
+        border-bottom: 3px solid grey;
+        padding-bottom: 10px;
+        text-shadow: 0 0 2px white, 0 0 4px black, 0 0 8px white;
+    }
+
+    #intro2 p{
+        position: relative;
+        top: -35px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: white;
+        margin-bottom: 1.2rem;
+        letter-spacing: 0.3px;
+    }
+
+    #intro{
+        position: relative;
+        margin-top: 70px;
+        margin-left: 100px;
+        padding-top:20px ;
+        padding-left: 35px;
+        padding-right: 20px;
+        background-color: black;
+        width: 1000px;
+        height: 680px;
+        color: white;
+        border-radius: 2%;
+    }
+
+    #intro h1{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: aliceblue;
+        border-bottom: 3px solid grey;
+        padding-bottom: 10px;
+        text-shadow: 0 0 2px white, 0 0 4px black, 0 0 8px white;
+    }
+
+    #intro p{
+        position: relative;
+        top: -35px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: white;
+        margin-bottom: 1.2rem;
+        letter-spacing: 0.3px;
+    }
+
+    #bloque_negro {
+        position: absolute;
+        top: 170px;
+        left: 1400px;
+        background-color: black;
+        width: 400px;
+        height: 700px;
+        color: aliceblue;
+        border: 4px solid black;
+        border-radius: 2%;
+        overflow: hidden;
+    }
+
+    #carrusel{
+        display: flex;
+        position: relative;
+        animation: animacion1 10s linear infinite;
+    }
+
+    #carrusel img {
+        width: 400px; 
+        height: 700px;
+    }
+
+    @keyframes animacion1 {
+        0%   { left: 0; }
+        25%  { left: -500px; }
+        50%  { left: -1000px; }
+        75%  { left: -1500px; }
+        100% {left: -2000px;}
+    }
+
+    #pequeño_negro{
+        position: absolute;
+        top: 1070px;
+        left: 100px;
+        background-color: black;
+        width: 400px;
+        height: 350px;
+        color: aliceblue;
+        border: 3px solid black;
+        border-radius: 2%;
+    }
+
+    #pequeño_negro img{
+        width: 400px;
+        height: 350px;
+        border-radius: 2%;
+    }
+
+    #pequeño_negro2{
+        position: absolute;
+        top: 1520px;
+        left: 100px;
+        background-color: black;
+        width: 400px;
+        height: 350px;
+        color: aliceblue;
+        border: 3px solid black;
+        border-radius: 2%;
+    }
+
+    #pequeño_negro2 img{
+        width: 400px;
+        height: 350px;
+        border-radius: 2%;
+    }
+
+    
+}
+
+/* 
+   ESTILOS DE MÓVIL
+                      */
+@media (max-width: 600px){
+
+    #nav{
+        width: 100%;
+        padding: 20px;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    #navdentro{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin: 0;
+        padding: 0 10px;   
+        align-items: flex-start; 
+    }
+
+    #navdentro .link{
+        font-size: 18px;
+        padding: 8px 0;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    #navdentro .link:last-child{
+        border-bottom: none;
+    }
+
+    #menu{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: block;
+    }
+
+    .icono{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .bajarmenu{
+        right: 20px;
+        top: 50px;
+        width: 160px;
+        background: #111;
+        border: 1px solid #333;
+        border-radius: 6px;
+        padding: 8px 0;
+    }
+
+    #intro,
+    #intro2{
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        height: auto;
+        text-align: left;
+        border-radius: 10px;
+    }
+
+    #bloque_negro{
+        display: none;
+    }
+
+    #pequeño_negro,
+    #pequeño_negro2{
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    #pequeño_negro img,
+    #pequeño_negro2 img{
+        width: 100%;
+        height: auto;
+    }
+}

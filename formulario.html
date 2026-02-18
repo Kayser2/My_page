@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="proyecto.css">
+</head>
+<body>
+
+     <div id="nav">
+
+    <nav id="navdentro">
+        <a class="link" href="index.html">INICIO</a>
+        <a class="link" href="cursos.html">CURSOS</a>
+        <a class="link" href="modelos.html">MODELOS</a>
+    </nav>
+
+    <div id="menu">
+        <div class="icono">☰</div>
+
+        <ul class="bajarmenu">
+            <li><a href="contactos.html">Personal</a></li>
+            <li><a href="formulario.html">Únete</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+    <form action="enviar.php">
+    <fieldset>
+        <legend>DATOS DE CONTACTO</legend>
+        Nombre: <br>
+        <input type="text" name="nombre" id="nombre"><br>
+        Apellidos: <br>
+        <input type="text" name="apellidos" id="apellidos"><br>
+        Teléfono: <br>
+        <input type="text" name="teléfono" id="teléfono"> <br>
+        Email: <br>
+        <input type="text" name="email" id="email"> <br>
+        Dirección: <br>
+        <input type="text" name="direccion" id="direccion"> <br>
+        Observaciones: <br>
+        <textarea name="observaciones" class="gris" size=></textarea>
+        
+    </fieldset>
+<br>
+    <fieldset>
+        <legend>DATOS ADICIONALES</legend>
+        
+        <input type="checkbox" name="check1" id="check1"> Diseño de Páginas Web <br>
+        <input type="checkbox" name="check2" id="check2"> Inglés Técnico <br>
+        <input type="checkbox" name="check3" id="check3"> Administración de Redes <br>
+        ¿Deseas recibir actualizaciones por correo electrónico?
+        <br>
+        <input type="radio" name="si" id="si"> Sí <br>
+        <input type="radio" name="no" id="no"> No <br>
+        <input type="radio" name="no" id="no"> Pocas <br>
+        ¿Como nos has conocido? <br>
+        <select name="desplegable" id="desplegable">
+            <option value="Redes Sociales">Redes Sociales</option>
+            <option value="Internet">Internet</option>
+            <option value="Otros">Otros</option>
+        </select>
+        
+    </fieldset>
+    <br>
+    <input type="reset" name="limpiar" class="boton" value="Limpiar Formulario">
+    <input type="submit" name="enviar" class="boton" value="Enviar">
+</form>
+</body>
+
+</html>
