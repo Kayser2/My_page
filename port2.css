@@ -1,0 +1,87 @@
+#asti{
+    position: relative;
+
+    width: 100%;
+    height: 1200px;
+    top: 600px;
+    
+
+
+}
+
+#titulo_asti{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    top: 50px;
+
+}
+
+
+
+#caja_asti{
+    position: relative;
+    
+    left: 1400px;
+    background: linear-gradient(45deg, #444, #000);
+    top: -920px;
+    width: 300px;
+    height: 750px;
+    border-radius: 10px;
+    animation: mover2 10s ease infinite;
+}
+
+@keyframes mover2 {
+    0% { background-position: 0% 50%; } 
+    100% { background-position: 0% 50%; }
+ }
+
+
+ #caja_texto1{
+    position: relative;
+    margin: 10%;
+
+    width: 1000px;
+    height: 720px;
+ }
+
+#caja_texto1 h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+
+    /* Línea inferior*/
+    border-bottom: 3px solid #ae00ff;
+    padding-bottom: 10px;
+
+    /* neón suave */ 
+    text-shadow: 0 0 2px #ae00ff, 0 0 4px #ae00ff, 0 0 8px #ae00ff;
+
+    /* Efecto de brillo suave al pasar el mouse */
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+#caja_texto1 h1:hover { 
+    color: #db4dff;
+    border-color: #1a1a1a; 
+}
+
+
+#caja_texto1 p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: white;
+
+    /* Espaciado */
+    margin-bottom: 1.2rem;
+
+    letter-spacing: 0.3px;
+
+    /* Suavidad general */
+    text-rendering: optimizeLegibility;
+}
+
